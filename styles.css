@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    background-color: #1C1C1C;
 }
 
 /* Layout */
@@ -39,31 +40,152 @@ main {
 #search, #submit {
     padding: 9px 13px;
     height: 38px;
-    border: 1px solid #D1D5DB;
+    border: 1px solid #2E2E2F;;
     font-size: 14px;
     font-weight: 500;
 }
 
 #search {
     width: 342px;
+    padding-left: 45px;
+    color: #fff;
     border-radius: 6px 0px 0px 6px;
+    background-color: #1C1C1C;
+    background-image: url('images/icon-3.png');
+    background-repeat: no-repeat;
+    background-size: 25px;
+    background-position: 10px;
+}
+
+#search:focus {
+    outline:none;
 }
 
 #submit {
     margin-left: -6px;
+    padding: 0 25px 0 25px;
     background: #F9FAFB;
-    color: #374151;
+    color: #fff;
+    background-color: #4B4B4B;
     border-radius: 0px 6px 6px 0px;
 }
 
 .search-container {
+    visibility: hidden;
     display: flex;
+    position: relative;
+}
+
+.watchlist-container {
+    visibility: hidden;
+    display: flex;
+    position: relative;
+    bottom: 200px;
+}
+
+.watchlist-container img {
+    width: 40px;
+    position: absolute;
+    left: 1;
+    top: 405px;
+    margin-left: 50px;
+
 }
 
 .explore {
     text-align: center;
     margin-top: 80%;
-    color:#DFDDDD ;
+    color:#787878 ;
     font-weight: 700;
     font-size: 1.125rem;
+}
+
+#movies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    max-width: 462px;
+}
+
+.movie {
+    display: flex;
+    margin-top: 34px;
+    padding-bottom: 34px;
+    border-bottom: 1.5px solid #2C2C2C;
+    color: #fff;
+}
+
+#star {
+    width: 12px;
+    align-self:center;
+    margin: 0 4px 0 8px;
+}
+
+#rating {
+    align-self: center;
+}
+
+
+.movie img {
+    width: 150px;
+}
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    width: 462px;
+}
+
+.movie-details {
+    margin-left: 21px;
+    font-size: 14px;
+}
+
+.title-and-rating {
+    display: flex;
+}
+
+.details {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+/* Typography */
+
+a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.125rem;
+    color: #2E2E2F;
+}
+
+#genre {
+    margin: 0 5px 0 10px;
+}
+
+
+
+/* Button */ 
+
+.list-btn {
+    border: none;
+    background-repeat: no-repeat;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+    align-self: center;
+}
+
+#add-btn {
+    background-image: url('images/icon-1.png');
+}
+
+#remove-btn {
+    background-image: url('images/icon-2.png');
 }

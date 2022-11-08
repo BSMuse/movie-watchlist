@@ -1,22 +1,19 @@
 import Film from "/film.js"
 
+const render = () => document.getElementById('movies').innerHTML = new Film(filmData).getFilmHtml()
 let filmData = ""
-
-const searchValue = document.getElementById('search').value
+const search = document.getElementById('search')
 
 async function getData(value) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=ecf8d912&t=${value}there+will+be+blood`)
+    const res = await fetch(`http://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
     const data = await res.json()
     filmData = data
+    const renderData = await render()
+    renderData
 } 
 
 document.getElementById('submit').addEventListener('click', (e) => {
-    (e).preventDefault
-    getData(searchValue)
-    console.log
-    document.getElementById('movies').innerHTML = new Film(filmData).getFilmHtml()
+    e.preventDefault()
+    getData(search.value)
+    filmData = ""
 })
-
-
-getData()
-console.log(filmData)

@@ -5,7 +5,7 @@ let filmData = ""
 const search = document.getElementById('search')
 
 async function getData(value) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
     const data = await res.json()
     filmData = data
     const renderData = await render()

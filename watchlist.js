@@ -2,7 +2,7 @@ let watchList = JSON.parse(localStorage.getItem('watchList'))
 console.log(watchList)
 const render = () => {
     if (watchList == '') {
-        document.querySelector('.search-container').style.display='contents'
+        document.querySelector('.search-container').style.display='block'
     } else{
         document.querySelector('.search-container').style.display='none'
         watchList.forEach( (movie) => {

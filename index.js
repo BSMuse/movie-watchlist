@@ -2,7 +2,7 @@ import Film from "/film.js"
 
 const filmArray = []
 let filmTitle = ""
-let watchList = ''
+let watchList = []
 localStorage.setItem('watchList', JSON.stringify(watchList))
 
 
@@ -56,7 +56,7 @@ document.getElementById('submit').addEventListener('click', (e) => {
                         button.classList.add('remove-btn')
                         let storeList = []
                         storeList.push(e.target.parentElement.parentElement.parentElement.parentElement.innerHTML)
-                        watchList = storeList
+                        watchList.push(storeList[0])
                         localStorage.setItem('watchList', JSON.stringify(watchList))
                         console.log(localStorage)
                         e.target.nextElementSibling.nextElementSibling.style.display='contents'

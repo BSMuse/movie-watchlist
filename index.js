@@ -2,8 +2,7 @@ import Film from "/film.js"
 
 const filmArray = []
 let filmTitle = ""
-let watchList = []
-localStorage.setItem('watchList', JSON.stringify(watchList))
+let watchList = JSON.parse(localStorage.getItem('watchList'))
 
 
 

@@ -73,7 +73,7 @@ main {
 .search-container {
     visibility: visible;
     display: flex;
-    align-self: center;
+    align-self: flex-end;
 }
 
 .watchlist-container {

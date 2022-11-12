@@ -23,7 +23,7 @@ const makeFilmArray = async (array) => {
 const search = document.getElementById('search')
 
 async function getTitle(value) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
     const data = await res.json()
     filmTitle = data.Search.map((x) => x.Title)
     makeFilmArray(filmTitle)
@@ -31,7 +31,7 @@ async function getTitle(value) {
 
 
 async function getData(array) {
-    const res = await fetch(`http://www.omdbapi.com/?apikey=ecf8d912&t=${array}`)
+    const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&t=${array}`)
     const data = await res.json()
     const example = async () =>  filmArray.push((data))
     example()

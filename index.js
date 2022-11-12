@@ -3,6 +3,7 @@ import Film from "/film.js"
 const filmArray = []
 let filmTitle = ""
 let watchList = ''
+localStorage.setItem('watchList', JSON.stringify(watchList))
 
 
 
@@ -53,8 +54,9 @@ document.getElementById('submit').addEventListener('click', (e) => {
                     button.addEventListener('click', function(e) {
                         button.classList.remove('add-btn')
                         button.classList.add('remove-btn')
-                        watchList.push(e.target.parentElement.parentElement.parentElement.parentElement.innerHTML)
-                        console.log(watchList)
+                        let storeList = []
+                        storeList.push(e.target.parentElement.parentElement.parentElement.parentElement.innerHTML)
+                        watchList = storeList
                         localStorage.setItem('watchList', JSON.stringify(watchList))
                         console.log(localStorage)
                         e.target.nextElementSibling.nextElementSibling.style.display='contents'

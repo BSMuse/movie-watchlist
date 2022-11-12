@@ -186,7 +186,7 @@ h2 {
 #no-result {
     margin-right: 175px;
     margin-top: 50px;
-    visibility: hidden;
+    display: none;
 }
 
 

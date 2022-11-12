@@ -43,7 +43,7 @@ document.getElementById('submit').addEventListener('click', (e) => {
     getTitle(search.value)
     document.getElementById('movies').innerHTML = render(filmArray)
     if (!filmTitle) {
-        document.querySelector('#no-result').style.visibility='visible'
+        document.querySelector('#no-result').style.display='block'
     } else {
             filmArray.length = 0
             filmTitle = ""

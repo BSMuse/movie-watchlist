@@ -2,8 +2,9 @@ let watchList = JSON.parse(localStorage.getItem('watchList'))
 console.log(watchList)
 const render = () => {
     if (watchList == '') {
-        document.querySelector('.watchlist-container').style.visibility='visible'
+        document.querySelector('.search-container').style.display='contents'
     } else{
+        document.querySelector('.search-container').style.display='none'
         watchList.forEach( (movie) => {
         document.getElementById('movies').innerHTML += `<div class='movie'>${movie}</div>`
         click()

@@ -2,7 +2,8 @@ import Film from "/film.js"
 
 const filmArray = []
 let filmTitle = ""
-let watchList = 
+let watchList = ''
+
 
 
 const render = (array) => {

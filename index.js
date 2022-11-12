@@ -3,7 +3,6 @@ import Film from "/film.js"
 const filmArray = []
 let filmTitle = ""
 let watchList = 
-console.log(watchList)
 
 
 const render = (array) => {

@@ -22,7 +22,7 @@ header {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: 30% 33%; 
-    height: 26.7%;
+    height: 26.5vh;
     color: #fff;
 }
 
@@ -58,7 +58,7 @@ main {
 }
 
 #search:focus {
-    outline:none;
+    outline: none;
 }
 
 #submit {
@@ -71,7 +71,7 @@ main {
 }
 
 .search-container {
-    visibility: hidden;
+    visibility: visible;
     display: flex;
     position: relative;
 }
@@ -86,9 +86,8 @@ main {
 .watchlist-container img {
     width: 40px;
     position: absolute;
-    left: 1;
     top: 405px;
-    margin-left: 50px;
+    margin-left: 255px;
 
 }
 
@@ -103,7 +102,7 @@ main {
 #movies {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 40px;
     max-width: 462px;
 }
 
@@ -148,8 +147,13 @@ main {
 
 .details {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     font-size: 12px;
+}
+
+.watchlist {
+    display: flex;
 }
 
 /* Typography */
@@ -169,6 +173,19 @@ h2 {
     margin: 0 5px 0 10px;
 }
 
+.added {
+    color: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    justify-self: flex-end;
+    display: none;
+}
+
+#no-result {
+    margin-right: 175px;
+    margin-top: 50px;
+    visibility: hidden;
+}
 
 
 /* Button */ 
@@ -182,10 +199,10 @@ h2 {
     align-self: center;
 }
 
-#add-btn {
+.add-btn {
     background-image: url('images/icon-1.png');
 }
 
-#remove-btn {
+.remove-btn {
     background-image: url('images/icon-2.png');
 }

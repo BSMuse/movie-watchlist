@@ -73,7 +73,6 @@ main {
 .search-container {
     visibility: visible;
     display: flex;
-    align-self: flex-end;
 }
 
 .watchlist-container {
@@ -92,13 +91,14 @@ main {
 }
 
 .explore {
-    margin-bottom: 25px;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
     color:#787878 ;
     font-weight: 700;
     font-size: 1.125rem;
+    align-self: flex-end;
 }
 
 #movies {

@@ -76,21 +76,6 @@ main {
     position: relative;
 }
 
-.watchlist-container {
-    visibility: hidden;
-    display: flex;
-    position: relative;
-    bottom: 200px;
-}
-
-.watchlist-container img {
-    width: 40px;
-    position: absolute;
-    top: 405px;
-    margin-left: 255px;
-
-}
-
 .explore {
     margin-top: 25px;
     display: flex;
@@ -153,6 +138,10 @@ main {
     justify-content: space-between;
     align-items: center;
     font-size: 12px;
+}
+
+.exp-watchlist {
+    display: flex;
 }
 
 .watchlist {

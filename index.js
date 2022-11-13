@@ -36,10 +36,11 @@ async function getData(array) {
     arrayPush()
 }
 
+document.getElementById('change').addEventListener('keypress',getTitle(search.value))
+
 document.getElementById('submit').addEventListener('click', (e) => {
     e.preventDefault()
     document.querySelector('.explore').style.visibility='hidden'
-    getTitle(search.value)
     document.getElementById('movies').innerHTML = render(filmArray)
     if (!filmTitle) {
         document.querySelector('#no-result').style.display='block'

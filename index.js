@@ -3,6 +3,7 @@ import Film from "/film.js"
 const filmArray = []
 let filmTitle = ""
 let watchList = JSON.parse(localStorage.getItem('watchList'))
+const search = document.getElementById('search')
 
 
 
@@ -20,8 +21,6 @@ const makeFilmArray = async (array) => {
     }
 }
 
-const search = document.getElementById('search')
-
 async function getTitle(value) {
     const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
     const data = await res.json()
@@ -33,11 +32,11 @@ async function getTitle(value) {
 async function getData(array) {
     const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&t=${array}`)
     const data = await res.json()
-    const example = async () =>  filmArray.push((data))
-    example()
+    const arrayPush = () =>  filmArray.push((data))
+    arrayPush()
 }
 
-document.getElementById('submit').addEventListener('click', (e) => {
+document.getElementById('submit').addEventListener('click', async (e) => {
     e.preventDefault()
     document.querySelector('.search-container').style.visibility='hidden'
     getTitle(search.value)

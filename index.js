@@ -2,7 +2,7 @@ import Film from "/film.js"
 
 const filmArray = []
 let filmTitle = ""
-let watchList = JSON.parse(localStorage.getItem('watchList'))
+const watchList = JSON.parse(localStorage.getItem('watchList'))
 const search = document.getElementById('search')
 
 

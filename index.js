@@ -38,12 +38,13 @@ async function getData(array) {
 
 document.getElementById('submit').addEventListener('click', (e) => {
     e.preventDefault()
-    document.querySelector('.search-container').style.visibility='hidden'
+    document.querySelector('.explore').style.visibility='hidden'
     getTitle(search.value)
     document.getElementById('movies').innerHTML = render(filmArray)
     if (!filmTitle) {
-        document.querySelector('#no-result').style.display='contents'
+        document.querySelector('#no-result').style.display='block'
     } else {
+            document.querySelector('#no-result').style.display='none'
             filmArray.length = 0
             filmTitle = ""
             const listBtn = document.querySelectorAll(".list-btn")

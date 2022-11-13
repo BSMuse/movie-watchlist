@@ -73,6 +73,7 @@ main {
 .search-container {
     visibility: visible;
     display: flex;
+    position: relative;
 }
 
 .watchlist-container {
@@ -157,6 +158,12 @@ main {
 .watchlist {
     display: flex;
 }
+
+.watchlist-img {
+    width: 25px;
+}
+
+
 
 /* Typography */
 

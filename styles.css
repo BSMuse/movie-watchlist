@@ -193,7 +193,7 @@ h2 {
 #no-result {
     margin-right: 175px;
     margin-top: 50px;
-    display: none;
+    display: contents;
 }
 
 

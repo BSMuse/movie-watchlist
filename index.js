@@ -36,7 +36,7 @@ async function getData(array) {
     arrayPush()
 }
 
-document.getElementById('submit').addEventListener('click', async (e) => {
+document.getElementById('submit').addEventListener('click', (e) => {
     e.preventDefault()
     document.querySelector('.search-container').style.visibility='hidden'
     getTitle(search.value)

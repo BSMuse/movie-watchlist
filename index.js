@@ -21,7 +21,7 @@ const makeFilmArray = async (array) => {
 
 async function getTitle(value) {
   const moviesDiv = document.getElementById('movies')
-  moviesDiv.innerHTML = 'loading...'
+  moviesDiv.innerHTML = `<h2>LOADING...</h2>`
 
   const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
   const data = await res.json()

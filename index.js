@@ -59,7 +59,6 @@ document.getElementById('submit').addEventListener('click', async (e) => {
             watchList.push(storeList[0])
             localStorage.setItem('watchList', JSON.stringify(watchList))
           }
-          console.log(localStorage)
           e.target.nextElementSibling.nextElementSibling.style.display='contents'
           e.target.nextElementSibling.style.display='none'
           e.target.style.display='none'

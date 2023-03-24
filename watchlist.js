@@ -1,5 +1,4 @@
 let watchList = JSON.parse(localStorage.getItem('watchList'))
-console.log(watchList)
 const render = () => {
     if (watchList == null) {
         document.querySelector('.search-container').style.display='block'

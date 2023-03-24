@@ -1,16 +1,23 @@
 let watchList = JSON.parse(localStorage.getItem('watchList'))
 console.log(watchList)
+
 const render = () => {
-    if (watchList == '') {
-        document.querySelector('.search-container').style.display='block'
-    } else{
-        document.querySelector('.search-container').style.display='none'
-        watchList.forEach( (movie) => {
-        document.getElementById('movies').innerHTML += `<div class='movie'>${movie}</div>`
-        click()
+    const moviesContainer = document.getElementById('movies')
+    moviesContainer.innerHTML = ''
+    
+    if (watchList == null) {
+        document.querySelector('.search-container').style.display = 'block'
+    } else {
+        document.querySelector('.search-container').style.display = 'none'
+        watchList.forEach((movie) => {
+            const movieDiv = document.createElement('div')
+            movieDiv.classList.add('movie')
+            movieDiv.textContent = movie
+            movieDiv.addEventListener('click', click)
+            moviesContainer.appendChild(movieDiv)
         })
     }
-} 
+}
 
 const click = () => {
     document.querySelectorAll(".list-btn").forEach(function(button){

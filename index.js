@@ -20,15 +20,15 @@ const makeFilmArray = async (array) => {
 }
 
 async function getTitle(value) {
-    const moviesDiv = document.getElementById('movies')
-    moviesDiv.innerHTML = 'loading...'
+  const moviesDiv = document.getElementById('movies')
+  moviesDiv.innerHTML = 'loading...'
 
-    const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
-    const data = await res.json()
-    filmTitle = data.Search.map((x) => x.Title)
-    makeFilmArray(filmTitle)
+  const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
+  const data = await res.json()
+  filmTitle = data.Search.map((x) => x.Title)
+  await makeFilmArray(filmTitle)
 
-    moviesDiv.innerHTML = render(filmArray)
+  moviesDiv.innerHTML = render(filmArray)
 }
 
 async function getData(array) {
@@ -41,7 +41,6 @@ document.getElementById('submit').addEventListener('click', async (e) => {
   e.preventDefault()
   await getTitle(search.value)
   document.querySelector('.explore').style.visibility='hidden'
-  document.getElementById('movies').innerHTML = render(filmArray)
   if (!filmTitle) {
     document.querySelector('#no-result').style.display='block'
   } else {

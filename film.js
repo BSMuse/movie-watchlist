@@ -7,7 +7,7 @@ class Film {
         const { Title, Runtime, Genre, Plot, Poster, imdbRating } = this
                return `
                 <div class="movie">
-                        <img src="${Poster}">
+                        <img src="${Poster} onerror='src="/images/no_poster.jpg'>
                         <div class="movie-details">
                             <div class="title-and-rating">
                                 <h3 id="title">${Title}</h3>

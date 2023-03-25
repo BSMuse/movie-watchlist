@@ -282,7 +282,7 @@ h2 {
         margin-top: 20px;
     }
 
-    img {
-        width: 50vh;
+    .poster {
+        width: 10vh;
     }
 }

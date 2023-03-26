@@ -291,6 +291,6 @@ h2 {
     }
 
     header {
-        background-position:center;
+        height: fit-content;
     }
 }

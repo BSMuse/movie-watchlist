@@ -162,10 +162,10 @@ main {
 @media only screen and (max-width: 600px) {
     .search {
         position: static;
-        display: flex;
+        /* display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: center; */
     }
   
     #search {

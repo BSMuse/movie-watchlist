@@ -19,7 +19,7 @@ class Film {
                                 <p id="genre">${Genre}</p> 
                                 <div class='watchlist'>
                                     <button class="list-btn add-btn"></button>
-                                    <p class='btn-label'>Watchlist</p>
+                                    <p class='btn-label glowing-text'>Watchlist</p>
                                     <p class='added'>Added to watchlist!</p>
                                 </div>
                             </div>

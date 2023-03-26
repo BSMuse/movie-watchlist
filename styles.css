@@ -236,6 +236,10 @@ h2 {
     background-image: url('images/icon-1.png');
 }
 
+img {
+    min-width: 100%;
+}
+
 .remove-btn {
     background-image: url('images/icon-2.png');
 }

@@ -170,17 +170,17 @@ main {
   
     #search {
         width: 100%;
-        border-radius: 0px;
-        padding: 0px;
-        margin: 0px;
+        /* border-radius: 0px; */
+        /* padding: 0px; */
+        /* margin: 0px; */
     }
   
     #submit {
         width: 100%;
         margin-bottom: 10px;
-        border-radius: 0px;
-        margin: 0px;
-        padding: 0px;
+        /* border-radius: 0px; */
+        /* margin: 0px; */
+        /* padding: 0px; */
     }
   
     .search-container {

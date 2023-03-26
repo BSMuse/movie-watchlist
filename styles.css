@@ -285,6 +285,6 @@ h2 {
     }
 
     .poster {
-        width: 10vh;
+        max-width: 50px;
     }
 }

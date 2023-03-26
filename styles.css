@@ -285,7 +285,8 @@ h2 {
     }
 
     .poster {
-        max-width: 100px;
+        max-width: 125px;
         max-height: fit-content ;
+        margin: 0 1rem;
     }
 }

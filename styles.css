@@ -39,16 +39,14 @@ main {
 
   #search {
       width: 100%;
-      padding-left: 30px;
-      border-radius: 6px;
-      margin-bottom: 10px;
+      border-radius: 16px;
   }
 
   #submit {
       width: 100%;
       margin-left: 0;
       margin-bottom: 10px;
-      border-radius: 6px;
+      border-radius: 16px;
   }
 
   .search-container {

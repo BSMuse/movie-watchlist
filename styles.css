@@ -234,10 +234,7 @@ h2 {
 
 .add-btn {
     background-image: url('images/icon-1.png');
-}
-
-img {
-    min-width: 100%;
+    background-size: cover;
 }
 
 .remove-btn {

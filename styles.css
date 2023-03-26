@@ -239,6 +239,7 @@ h2 {
 
 .remove-btn {
     background-image: url('images/icon-2.png');
+    background-size: cover;
 }
 
 /* Media queries for smaller screens */

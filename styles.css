@@ -44,9 +44,8 @@ main {
 
   #submit {
       width: 100%;
-      margin-left: 0;
       margin-bottom: 10px;
-      border-radius: 16px;
+      border-radius: 16px 16px 16px 16px;
   }
 
   .search-container {

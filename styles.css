@@ -291,6 +291,6 @@ h2 {
     }
 
     header {
-        height: fit-content;
+        background-attachment: initial;
     }
 }

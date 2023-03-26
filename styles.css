@@ -299,5 +299,7 @@ h2 {
 
     header {
         background-attachment: initial;
+        display: flex;
+        flex-direction: column;
     }
 }

@@ -305,7 +305,7 @@ h2 {
     }
 
     .poster {
-        max-width: 125px;
+        max-width: 150px;
         max-height: fit-content ;
         margin: 0 1rem;
     }

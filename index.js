@@ -22,13 +22,16 @@ const makeFilmArray = async (array) => {
 async function getTitle(value) {
   const moviesDiv = document.getElementById('movies')
   moviesDiv.innerHTML = `<h2>LOADING...</h2>`
-
-  const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
+  try { 
+    const res = await fetch(`https://www.omdbapi.com/?apikey=ecf8d912&s=${value}`)
   const data = await res.json()
   filmTitle = data.Search.map((x) => x.Title)
   await makeFilmArray(filmTitle)
-
   moviesDiv.innerHTML = render(filmArray)
+  } catch (error) {
+      console.error(error)
+      moviesDiv.innerHTML = `<h2>Error loading movies</h2>`
+  }
 }
 
 async function getData(array) {

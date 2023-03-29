@@ -30,7 +30,7 @@ async function getTitle(value) {
   moviesDiv.innerHTML = render(filmArray)
   } catch (error) {
       console.error(error)
-      moviesDiv.innerHTML = `<h2>Error loading movies</h2>`
+      moviesDiv.innerHTML = `<h2>Error loading movies!</h2>`
   }
 }
 

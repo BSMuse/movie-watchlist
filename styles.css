@@ -125,10 +125,10 @@ main {
 }
 
 .movies {
-    display: flex;
+    display:flex;
     flex-direction: column;
-    margin-top: 80px;
     width: 462px;
+    margin: 80px auto 0 auto;
 }
 
 .movie-details {
@@ -190,10 +190,6 @@ main {
   
     #movies {
         max-width: 100%;
-    }
-  
-    .movies {
-        width: 100%;
     }
   }
 

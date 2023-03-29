@@ -256,6 +256,10 @@ button {
     align-self: center;
 }
 
+.list-btn:hover {
+    cursor: pointer;
+}
+
 .add-btn {
     background-image: url('images/icon-1.png');
     background-size: cover;

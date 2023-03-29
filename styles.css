@@ -243,6 +243,10 @@ h2 {
 
 /* Button */
 
+button {
+    cursor: pointer;
+}
+
 .list-btn {
     border: none;
     background-repeat: no-repeat;
